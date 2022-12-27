@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hphard"
+    tools:context=".Harry3">
+    <TextView
+        android:id="@+id/hardquestion1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Who is Harry Potter's ancestor?"
+        android:textColor="#550202"
+        android:textSize="94px"
+        android:textAlignment="center"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="410px"/>
+
+    <Button
+        android:id="@+id/righthardharry1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2196F3"
+        android:text="Ignotus Peverell"
+        android:textAllCaps="false"
+        android:layout_marginTop="400px"
+        android:textSize="60px"
+        android:textColor="#FBE731"
+        app:layout_constraintTop_toBottomOf="@+id/hardquestion1"
+        tools:layout_editor_absoluteX="-6dp" />
+
+    <Button
+        android:id="@+id/wronghardharry1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2196F3"
+        android:text="Antioch Peverell"
+        android:textAllCaps="false"
+        android:layout_marginTop="20px"
+        android:textSize="60px"
+        android:textColor="#FBE731"
+        app:layout_constraintTop_toBottomOf="@+id/righthardharry1"
+        tools:layout_editor_absoluteX="-5dp" />
+
+    <Button
+        android:id="@+id/wronghardharry2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#2196F3"
+        android:text="Cadmus Peverell"
+        android:textAllCaps="false"
+        android:layout_marginTop="20px"
+        android:textSize="60px"
+        android:textColor="#FBE731"
+        app:layout_constraintTop_toBottomOf="@+id/wronghardharry1"
+        tools:layout_editor_absoluteX="-6dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

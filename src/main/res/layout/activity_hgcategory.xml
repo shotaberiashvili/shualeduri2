@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hgcategory"
+    tools:context=".HGCategory">
+    <TextView
+        android:id="@+id/choosehgcategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How well  do you know Hermione Granger?"
+        android:textAlignment="center"
+        android:textColor="#EDEDED"
+        android:textSize="100px"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.151" />
+
+    <TextView
+        android:id="@+id/choosehgcategory1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Choose category"
+        android:textColor="#EDEDED"
+        android:textSize="80px"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choosehgcategory" />
+
+    <Button
+        android:id="@+id/easyhg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        app:backgroundTint="#B34CAF50"
+        android:background="@drawable/button1"
+        android:fontFamily="cursive"
+        android:onClick="easyhermione"
+        android:text="Easy"
+        android:textColor="@color/black"
+        android:textSize="70px"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/choosehgcategory1" />
+
+    <Button
+        android:id="@+id/mediumhg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:textColor="@color/black"
+        app:backgroundTint="#B34CAF50"
+        android:background="@drawable/button1"
+        android:fontFamily="cursive"
+        android:onClick="mediumhermione"
+        android:text="Medium"
+        android:textSize="70px"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/easyhg"/>
+
+    <Button
+        android:id="@+id/hardhg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:textColor="@color/black"
+        app:backgroundTint="#B34CAF50"
+        android:background="@drawable/button1"
+        android:fontFamily="cursive"
+        android:onClick="hardhermione"
+        android:text="Hard"
+        android:textSize="70px"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mediumhg" />
+</androidx.constraintlayout.widget.ConstraintLayout>

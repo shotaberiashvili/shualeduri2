@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/rwcategory"
+    tools:context=".RWCategory">
+    <TextView
+        android:id="@+id/chooserwcategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="How well  do you know Ron Weasley?"
+        android:textAlignment="center"
+        android:textColor="#FFEB3B"
+        android:textSize="100px"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.151" />
+
+    <TextView
+        android:id="@+id/chooserwcategory1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Choose category"
+        android:textColor="#FFEB3B"
+        android:textSize="80px"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chooserwcategory" />
+
+    <Button
+        android:id="@+id/easyrw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="64dp"
+        android:textColor="@color/black"
+        app:backgroundTint="#B34CAF50"
+        android:background="@drawable/button1"
+        android:fontFamily="cursive"
+        android:onClick="easyron"
+        android:text="Easy"
+        android:textSize="70px"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chooserwcategory1"/>
+
+    <Button
+        android:id="@+id/mediumrw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:textColor="@color/black"
+        app:backgroundTint="#B34CAF50"
+        android:background="@drawable/button1"
+        android:fontFamily="cursive"
+        android:onClick="mediumron"
+        android:text="Medium"
+        android:textSize="70px"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/easyrw"/>
+
+    <Button
+        android:id="@+id/hardrw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:textColor="@color/black"
+        app:backgroundTint="#B34CAF50"
+        android:background="@drawable/button1"
+        android:fontFamily="cursive"
+        android:onClick="hardron"
+        android:text="Hard"
+        android:textSize="70px"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/mediumrw" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
